@@ -2,8 +2,12 @@
 #include"Queue.h"
 #include <fstream>
 #include<string>
+<<<<<<< HEAD
 Queue::Queue(std::string file) {
   std:: ifstream ifile{file,std::ios::app};
+=======
+Queue::Queue(std::ifstream &ifile) {
+>>>>>>> 748fa350463ae50c2cf4a8e6d213f4a4c1f2cf22
  
    ifile>>N;
    
@@ -78,6 +82,9 @@ double Queue::deQueue(){
 Queue::~Queue(){
 
   std::cout<<"Distructor"<<std::endl;
+<<<<<<< HEAD
   delete [] arr;
+=======
+>>>>>>> 748fa350463ae50c2cf4a8e6d213f4a4c1f2cf22
   
 }
